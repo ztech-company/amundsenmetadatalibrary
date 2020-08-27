@@ -12,6 +12,8 @@ jobs:
         uses: actions/setup-python@v1
         with:
           python-version: 3.6
+      - name: Run codecov
+        uses: codecov/codecov-action@v1
   test-unit:
     runs-on: ubuntu-18.04
     strategy:
